@@ -8,6 +8,9 @@ I created this as a starter-kit development project for PHP with typescript (bot
 
 ## Starting Development
 - Simply run `docker-compose up` at root directory.
+- Execute `composer install` to install all dependencies from laravel starter project.
+- Duplicate `.env` file and modify according to your needs.
+- Also execute `php artisan key:generate` to generate the application key.
 - Start new terminal, change directory to `web` folder and run `yarn install` to install dependencies on client side.
 - Now you must be able to navigate to server side with [localhost](http://localhost:8080)
 - That's it! HAPPY DEV :)
