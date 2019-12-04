@@ -31,14 +31,14 @@ services:
     volumes:
       - dbdata:/var/lib/mysql
     environment:
-      - "MYSQL_DATABASE=yourwebsite"
+      - "MYSQL_DATABASE=kritb"
       - "MYSQL_ROOT_PASSWORD=p@ssw0rd"
     ports:
         - "33061:3306"
 
   phpmyadmin:
       image: phpmyadmin/phpmyadmin
-      container_name: yourwebsite-phpmyadmin
+      container_name: kritb-phpmyadmin
       links:
       - "database:database"
       environment:
